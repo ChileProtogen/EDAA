@@ -1,0 +1,19 @@
+dataset,n_puntos,algoritmo,repeticiones,tiempo_promedio_ms,desv_std_ms,vertices_hull,nota
+circulo_1500.txt,1500,Fuerza Bruta,5,427010.6495,12193.1787,1500,OK
+circulo_1500.txt,1500,Jarvis March,5,424.7195,14.384,1500,OK
+circulo_1500.txt,1500,Monotone Chain,5,2.2235,0.3611,1500,OK
+clusters_3000.txt,3000,Fuerza Bruta,0,,,,Omitido por superar N=1500
+clusters_3000.txt,3000,Jarvis March,5,11.1645,1.2973,18,OK
+clusters_3000.txt,3000,Monotone Chain,5,4.1433,0.5628,18,OK
+colineales_1500.txt,1500,Fuerza Bruta,5,427584.559,6543.6002,16,OK
+colineales_1500.txt,1500,Jarvis March,5,5.2438,0.5483,16,OK
+colineales_1500.txt,1500,Monotone Chain,5,2.2485,0.3153,16,OK
+grande_50000.txt,50000,Fuerza Bruta,0,,,,Omitido por superar N=1500
+grande_50000.txt,50000,Jarvis March,5,315.3654,16.3198,30,OK
+grande_50000.txt,50000,Monotone Chain,5,97.2903,5.1634,30,OK
+uniforme_2000.txt,2000,Fuerza Bruta,0,,,,Omitido por superar N=1500
+uniforme_2000.txt,2000,Jarvis March,5,10.7536,1.7968,26,OK
+uniforme_2000.txt,2000,Monotone Chain,5,2.8529,0.4562,26,OK
+puntos_100.txt,100,Fuerza Bruta,5,113.7969,6.2506,12,OK
+puntos_100.txt,100,Jarvis March,5,0.2839,0.0828,12,OK
+puntos_100.txt,100,Monotone Chain,5,0.1439,0.0369,12,OK
