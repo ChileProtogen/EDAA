@@ -6,6 +6,11 @@ import matplotlib.pyplot as plt
 from incremental_monotone_chain import insert_point_incremental
 from monotone_chain import monotone_chain
 
+
+# EJEMPLO DE USO: python .\incremental_monotone_chain.py .\puntos_100.txt para el archivo puntos_100.txt, se puede con otros sets de puntos.
+# En este se pueden agregar puntos incrementalmente y se actualiza el convex hull en tiempo real.
+# Funciona añadirlos en consola y clickeando con el mouse.
+
 AYUDA = """Comandos:
   add x,y     agrega un punto (actualiza el hull incrementalmente)
   del x,y     quita un punto exacto

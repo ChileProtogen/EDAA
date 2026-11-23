@@ -3,7 +3,7 @@ import threading
 import queue
 import matplotlib.pyplot as plt
 
-# reutilizamos el algoritmo y las funciones de lectura del archivo anterior
+
 from convex_hull import findConvexHull, readPoints, orderCounterClockwise
 
 AYUDA = """Comandos:

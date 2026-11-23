@@ -1,8 +1,6 @@
 from monotone_chain import cross, monotone_chain
 
-# EJEMPLO DE USO: python .\incremental_monotone_chain.py .\puntos_100.txt para el archivo puntos_100.txt, se puede con otros sets de puntos.
-# En este se pueden agregar puntos incrementalmente y se actualiza el convex hull en tiempo real.
-# Funciona añadirlos en consola y clickeando con el mouse.
+
 
 def insert_point_incremental(hull, p):
     """

@@ -118,7 +118,7 @@ def plotHull(points, hullPoints):
 
 
 if __name__ == "__main__":
-    # uso: python convex_hull.py puntos.txt
+    
     path = sys.argv[1] if len(sys.argv) > 1 else "puntos_100.txt"
 
     points = readPoints(path)

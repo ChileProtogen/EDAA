@@ -8,7 +8,7 @@ from convex_hull import findConvexHull, readPoints
 from jarvismarch import jarvis_march
 from monotone_chain import monotone_chain
 
-# Evita que Fuerza Bruta (O(n^3)) bloquee el benchmark en datasets grandes
+# Evita que el algoritmo de Fuerza Bruta (convex_hull.py con complejidad O(n^3)) bloquee el benchmark en datasets grandes
 MAX_BRUTE_FORCE_N = 1500
 REPEATS = 5
 

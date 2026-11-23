@@ -13,17 +13,14 @@ from monotone_chain import monotone_chain
 # ==========================================
 # CONFIGURACIÓN EXPERIMENTAL
 # ==========================================
-RUNS = 5          # Repeticiones por prueba para calcular media y sigma
-WARMUP = 1        # Ejecución previa de calentamiento
+RUNS = 5         
+WARMUP = 1        
 SEED = 42
 
 SIZES = [100, 500, 1000, 2500, 5000, 10000, 20000, 35000]
 DISTRIBUTIONS = ["Uniforme", "Circulo", "Clusters", "Colineal"]  # 4 x 8 = 32 pruebas
 
 
-# ==========================================
-# ESTRUCTURA DE ESTADÍSTICAS (Media, Sigma, Mediana, CV)
-# ==========================================
 def calculate_stats(times_ms):
     n = len(times_ms)
     mean = sum(times_ms) / n
@@ -41,9 +38,6 @@ def calculate_stats(times_ms):
     }
 
 
-# ==========================================
-# GENERADORES DE DATASETS (Usando enteros para compatibilidad exacta con Graham Scan)
-# ==========================================
 def generate_dataset(dist_name, n, rng):
     scale = 100000
 
@@ -95,9 +89,6 @@ def generate_dataset(dist_name, n, rng):
     raise ValueError(f"Distribución desconocida: {dist_name}")
 
 
-# ==========================================
-# MEDICIÓN DE ALGORITMO
-# ==========================================
 def measure_algorithm(func, points, runs=RUNS, warmup=WARMUP):
     for _ in range(warmup):
         func([[p[0], p[1]] for p in points])
