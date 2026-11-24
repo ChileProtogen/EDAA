@@ -13,7 +13,7 @@ from monotone_chain import monotone_chain
 # ==========================================
 # CONFIGURACIÓN EXPERIMENTAL
 # ==========================================
-RUNS = 5         
+RUNS = 32        
 WARMUP = 1        
 SEED = 42
 
